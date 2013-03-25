@@ -24,8 +24,10 @@ class CORSHTTPRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 	        self.end_headers()
 	        return f
 if __name__ == "__main__":
+    import os
+    import re
+    import SocketServer
     import your_modules
-    
     PORT = 1337 #Pick a port number
 
     Handler = CORSHTTPRequestHandler
