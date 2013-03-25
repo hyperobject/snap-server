@@ -9,7 +9,7 @@ class CORSHTTPRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 		regex = re.compile("\/command(othercommands)(in|regex)")
 		m = regex.match(path)
 		#do commands
-	elif path == '/nxttouch': #return data
+	elif path == '/return': #return data
 		f = open(ospath + '/return', 'w+')
 		f.write("your data")
 		f.close()
