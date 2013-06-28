@@ -11,7 +11,7 @@ class CORSHTTPRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 		#do commands
 	if path == '/return': #return data
 		f = open(ospath + '/return', 'w+')
-		f.write("your data")
+		f.write(str(your data))
 		f.close()
 		f = open(ospath + '/return', 'rb')
 		ctype = self.guess_type(ospath + '/return')
